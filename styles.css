@@ -1,8 +1,8 @@
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f5f7fa;
     color: #333;
     line-height: 1.6;
 }
@@ -13,37 +13,39 @@ body {
     margin: 20px auto;
     background-color: #fff;
     padding: 30px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 header {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 2px solid #e6e9f0;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: white;
+    padding: 30px 0;
+    border-radius: 10px 10px 0 0;
 }
 
 .header-content h1 {
-    font-size: 40px;
-    color: #2c3e50;
+    font-size: 36px;
     margin-bottom: 5px;
 }
 
 .subtitle {
     font-size: 18px;
-    color: #7f8c8d;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .contact-info {
-    color: #7f8c8d;
+    color: #f0f0f0;
     font-size: 16px;
     margin-bottom: 10px;
 }
 
 .linkedin-link {
-    color: #0077b5;
+    color: #f9f9f9;
     font-weight: 500;
     text-decoration: none;
     font-size: 16px;
@@ -55,35 +57,37 @@ header {
 
 .btn {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 12px 25px;
     color: #fff;
-    background-color: #3498db;
+    background-color: #ff7f50;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     text-decoration: none;
     font-weight: bold;
-    transition: background-color 0.3s;
-    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px;
 }
 
 .primary-btn:hover {
-    background-color: #2980b9;
+    background-color: #ff5722;
+    transform: translateY(-3px);
 }
 
 .section {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 section h2 {
     font-size: 28px;
-    color: #34495e;
+    color: #333;
     margin-bottom: 15px;
-    border-bottom: 2px solid #3498db;
+    border-bottom: 3px solid #ff7f50;
     padding-bottom: 5px;
+    display: inline-block;
 }
 
 .timeline {
-    border-left: 3px solid #3498db;
+    border-left: 3px solid #ff7f50;
     padding-left: 20px;
     margin-top: 20px;
 }
@@ -102,7 +106,7 @@ section h2 {
     width: 20px;
     height: 20px;
     background-color: #fff;
-    border: 3px solid #3498db;
+    border: 3px solid #ff7f50;
     border-radius: 50%;
 }
 
@@ -114,17 +118,30 @@ section h2 {
 }
 
 .skill-item {
-    background-color: #ecf0f1;
-    padding: 15px;
-    border-radius: 5px;
+    background-color: #eef1f7;
+    padding: 20px;
+    border-radius: 10px;
     text-align: center;
     font-weight: 500;
+    transition: transform 0.3s;
+}
+
+.skill-item:hover {
+    transform: scale(1.05);
 }
 
 footer {
     text-align: center;
     padding: 30px 0;
-    background-color: #ecf0f1;
+    background-color: #667eea;
     border-top: 2px solid #ddd;
     margin-top: 40px;
+}
+
+footer a.btn {
+    background-color: #ff7f50;
+}
+
+footer a.btn:hover {
+    background-color: #ff5722;
 }
